@@ -20,13 +20,13 @@ It is supervised by the Post-doc Dimitri Maurice Goutaudier and the PhD students
 # Project structure
 
 ## Presentation
-The dataset we work on is made up of 500 trajectories of the center of gravity of the AeroSpace Bearing, where the aerodynamic force acts and every trajectory is characterized by 2001 time instants, whose temporal distance is uniform. These data are represented by means of two 500x2001 matrices, namely the X-coordinates and Y-coordinates (`X.csv` and `Y.csv`) and are used to predict the corresponding aerodynamic force along x-direction and y-direction (`FX.csv` and `FY.csv`), equally represented as matrices 500x2001. The project aims at studying and implementing different regression tecniques, in order to perform reliable predictions on the aerodynamic force in an aerospace bearing structure.
+The dataset we work on is made up of 500 trajectories of the center of gravity of the AeroSpace Bearing, where the aerodynamic force is applied, and every trajectory is characterized by 2001 time instants, whose temporal distance is uniform. These data are represented by means of two 500x2001 matrices, namely the X-coordinates and Y-coordinates (`X.csv` and `Y.csv`) and are used to predict the corresponding aerodynamic force along x-direction and y-direction (`FX.csv` and `FY.csv`), equally represented as matrices 500x2001. The project aims at studying and implementing different regression tecniques, in order to perform reliable predictions on the aerodynamic force in an aerospace bearing structure.
 
 ## Documentation
 The documentation has been provided by the supervisors of the project, after a superficial, but still straightforward, explanation of the physical structure we deal with: the Aerospace Bearing. All the references are in the `documentation` folder.
 
 ## Linear Regression
-Data inspection (`inspection_run.py`) necessarily predates the actual data analysis. All the features are analyzed to catch the distribution, the skewness, the correlation, the symmetry around the mean, as well asto the standard statistical quantities.
+The preliminary part of the project consist of performing linear regression to predict the forces. As expected, this model results in being too simple to catch the non-linear trend of both the trajectory and the forces. In particular, two different models are implemented and are respectively `main_autoreg_true.py` and `main_dist_rot.py`. 
 
 ## Forward Neural Network
 In addition to Logaritmic and Cosine tranforms, an optimal-degree polynomial expansion of the dataset is performed, too.
