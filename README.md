@@ -29,7 +29,7 @@ The documentation has been provided by the supervisors of the project, after a s
 The preliminary part of the project consist of performing linear regression to predict the forces. As expected, this model results in being too simple to catch the non-linear trend of both the trajectory and the forces. In particular, two different models are implemented: they are respectively `main_autoreg_true.py` and `main_dist_rot.py`. 
 
 ## Forward Neural Network
-As expected, Neural Networks represent the optimal task to hit the target, being able to catch the non-linearity and periodic behaviour of the physical system they analyse. Three different Fully Connected Forward Neural Network (`fnn` folder) are therefore implemented: `FNN_coord_single.ipynb`, `FNN_predicted_single.ipynb` and `FNN_true_single.ipynb` and differ in the data they take as input.
+As expected, Neural Networks represent the optimal task to hit the target, being able to catch the non-linearity and periodic behaviour of the physical system they analyse. Three different Fully Connected Forward Neural Network (`fnn` folder) are therefore implemented: `FNN_coord_single.ipynb`, `FNN_predicted_single.ipynb` and `FNN_true_single.ipynb`, differing in the data they take as input.
 
 ## Convolutional Neural Network
 Having to deal with times series, also Convolutional Neural Networks (`cnn` folder) may be a good fit. In particular, a 1D-convolution is suitable for encoding the time dependency of data. Similarly to FNN, three different networks are implemented: `CNN_coord_single.ipynb`, `CNN_predicted_single.ipynb` and `CNN_true_single.ipynb`, again differing in the data plugged as input.
