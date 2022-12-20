@@ -36,7 +36,7 @@ As expected, Neural Networks represent the optimal task to hit the target, being
 Having to deal with times series, also Convolutional Neural Networks (`cnn` folder) may be a good fit. In particular, a 1D-convolution is suitable for encoding the time dependency of data. Similarly to FNN, three different networks are implemented: `CNN_coord_single.ipynb`, `CNN_predicted_single.ipynb` and `CNN_true_single.ipynb`, again differing in the data plugged as input.
 
 ## Tuning of the Parameters
-As a consequence of some preliminary attempts, the 'coordinates' model ends up being the most appropriate according to the target, so a grid search on the hyper parameters of the model is performed both for the FNN and CNN model to choose the ones minimizing the test loss (`FNN_coord_tuning.ipynb` and `CNN_coord_tuning.ipynb`).
+As a consequence of some preliminary attempts, the 'CNN_coord_single.ipynb' model ends up being the most appropriate according to the target, so a grid search on the hyper parameters of the model is performed both for the FNN and CNN model to choose the ones minimizing the test loss (`FNN_coord_tuning.ipynb` and `CNN_coord_tuning.ipynb`).
 
 ## Delay Parameter and Elbow Curve
 Finally, once all the hyper-parameters are fixed, the optimal delay parameter is chosen as the best trade-off between computational burden and accuracy. In particular, this is obtained plotting the test-loss over the delay parameter and selecting the one corresponding to the elbow of the curve.
