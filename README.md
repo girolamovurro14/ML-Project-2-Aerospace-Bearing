@@ -42,7 +42,7 @@ As a consequence of some preliminary attempts, the 'CNN_coord_single.ipynb' mode
 Finally, once all the hyper-parameters are fixed, the optimal delay parameter is chosen as the best trade-off between computational burden and accuracy. In particular, this is obtained plotting the test-loss over the delay parameter and selecting the one corresponding to the elbow of the curve.
 
 ## Envirnment
-The project is developed and tested with `python3.8.10`. The required library for running the models and training is `numpy` and `pytorch`. The library for visualization are `maptplotlib` and `seaborn`. As regards the linear regression the Python IDE used is `Spyder`, while for neural networks (both forward and convolutional) JupyterLab is more appropriate.
+The project is developed and tested with `python3.8.10`. The required library for running the models and training is `numpy` and `pytorch`. The library for visualization are `maptplotlib`. As regards the linear regression the Python IDE used is `Spyder`, while for neural networks (both forward and convolutional) `Jupyter Notebook` is more appropriate.
 
 ## Results
 The results obtained are quite satisfying, reaching a test error of the order of 10^-5 and a delay parameter d=50.
