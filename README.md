@@ -41,8 +41,11 @@ As a consequence of some preliminary attempts, the 'CNN_coord_single.ipynb' mode
 ## Delay Parameter and Elbow Curve
 Finally, once all the hyper-parameters are fixed, the optimal delay parameter is chosen as the best trade-off between computational burden and accuracy. In particular, this is obtained plotting the test-loss over the delay parameter and selecting the one corresponding to the elbow of the curve.
 
-## Envirnment
+## Environment
 The project is developed and tested with `python3.8.10`. The required library for running the models and training is `numpy` and `pytorch`. The library for visualization are `maptplotlib`. As regards the linear regression the Python IDE used is `Spyder`, while for neural networks (both forward and convolutional) `Jupyter Notebook` is more appropriate.
 
 ## Results
-The results obtained are quite satisfying, reaching a test error of the order of 10^-5 and a delay parameter d=50.
+The results obtained are quite satisfying, reaching a test error of the order of 10^-6 and a relative error of 0.2% and a delay parameter d=100.
+
+## Robustness
+Finally, the optimal model is trained on a brand new dataset, whose observations are generated from 9 different sets of parameters. This stage of the project aims at cheching the robustness of the model when it comes to varying the parameters that characterize the observations. Provided the limited number of new observations for every set of parameters, results are still satifying: the test error is XXX and the relative one is XXX
