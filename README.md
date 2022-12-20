@@ -4,6 +4,7 @@ The repository contains all the material used to carry out the Machine Learning 
  - the code needed to implement linear regression on the aerodynamic force (`linear regression` folder)
  - the code needed to implement a Fully Connected Forward Neural Network on the aerodynamic force (`fnn` folder)
  - the code needed to implement a Convolutional Neural Network on the aerodynamic force (`cnn` folder)
+ - the code needed to extract some of the plots in the report (`plots` folder)
  
 # Team
 This project is executed by the team GiFT with the following members:
